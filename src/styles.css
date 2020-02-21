@@ -1,0 +1,127 @@
+body {
+  font-family: monospace;
+}
+
+.engine {
+  background-image: url("https://spaceship-workshop.netlify.com/engine.png");
+  width: 700px;
+  height: 468px;
+  position: relative;
+  margin: 10px;
+}
+
+.engineMonitor {
+  position: absolute;
+  background-color: Black;
+  width: 89px;
+  height: 43px;
+  left: 303px;
+  top: 306px;
+  padding: 2px;
+  font-family: monospace;
+  color: White;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.engineMonitor h1 {
+  color: Green;
+  display: inline;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.cockpit {
+  background-image: url("https://spaceship-workshop.netlify.com/cockpit.png");
+  width: 700px;
+  height: 468px;
+  position: relative;
+  margin: 10px;
+}
+
+.engineModePanel {
+  position: absolute;
+  width: 98px;
+  height: 100px;
+  left: 300px;
+  top: 310px;
+  color: White;
+  padding: 2px;
+  margin: 0;
+  border: 1px solid lightblue;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: monospace;
+}
+
+input[type="radio"]:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  top: -1px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid white;
+}
+
+input[type="radio"]:checked:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  top: -1px;
+  left: -1px;
+  position: relative;
+  background-color: #7ac390;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid white;
+}
+
+.navigationPanel {
+  position: absolute;
+  width: 196px;
+  height: 75px;
+  left: 160px;
+  top: 207px;
+  color: White;
+  padding: 2px;
+  margin: 0;
+  border: 1px solid lightblue;
+}
+
+.navigationPanel input {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.navigationPanel label {
+  width: 200px;
+  display: inline-block;
+}
+
+.navigationPanel button {
+  width: 50px;
+  height: 30px;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-family: monospace;
+  background-color: #7ac390;
+  border: 1px solid darkblue;
+}
+
+.locationPanel {
+  position: absolute;
+  width: 170px;
+  height: 75px;
+  left: 366px;
+  top: 207px;
+  color: White;
+  padding: 2px;
+  margin: 0;
+  border: 1px solid lightblue;
+}
